@@ -180,6 +180,353 @@ a {
 img {
     max-width: 100%;
 }
+
+@media screen and (min-width: 100px) {
+    #main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            'about'
+            'column1'
+            'column2'
+            'column3'
+        ;     
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        background-color: #c654ff;
+        height: 20px;
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .logo {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        margin-right: auto;
+    }
+    .content {
+        grid-area: about;
+        font-size: 20px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        background-color: white;
+        color: #EBB1A4;
+    }
+    
+    .content1 {
+        grid-area: column1;
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        background-color: #EBB1A4;
+        color: white;
+    }
+    
+    .content2 {
+        grid-area: column2;
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        background-color: white;
+        color: #EBB1A4;
+    }
+    
+    .content3 {
+        grid-area: column3;
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        background-color: #EBB1A4;
+        color: white;
+    }
+    .hero_image1 {
+        background-image: url(pictures/studio.jpg);
+        height: 100px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero_image2 {
+        background-image: url(pictures/founder.jpg);
+        height: 100px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .hero_image3 {
+        background-image: url(pictures/team.jpg);
+        height: 100px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .hero_image4 {
+        background-image: url(pictures/games.jpg);
+        height: 100px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .games {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-gap: 15px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .games em {
+        font-size: large;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 15px;
+        padding: 15px;
+        
+        grid-template-areas: 
+            'img1 img2 img3'
+        ;
+    }
+    
+    #img_grid1 {
+        grid-area: img1;
+        justify-self: center;
+        background-color: white;
+        height: 100px;
+        width: 100px;
+    }
+    
+    #img_grid2 {
+        grid-area: img2;
+        justify-self: center;
+        background-color: white;
+        height: 100px;
+        width: 100px;
+    }
+    
+    #img_grid3 {
+        grid-area: img3;
+        justify-self: center;
+        background-color: white;
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+} 
+
+@media screen and (min-width: 200px) {
+    #main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            'about'
+            'column1'
+            'column2'
+            'column3'
+        ;     
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        background-color: #c654ff;
+        height: 25px;
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .logo {
+        width: 25px;
+        height: 25px;
+        padding: 10px;
+        margin-right: auto;
+    }
+    .content {
+        grid-area: about;
+        font-size: 20px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        background-color: white;
+        color: #EBB1A4;
+    }
+    
+    .content1 {
+        grid-area: column1;
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        background-color: #EBB1A4;
+        color: white;
+    }
+    
+    .content2 {
+        grid-area: column2;
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        background-color: white;
+        color: #EBB1A4;
+    }
+    
+    .content3 {
+        grid-area: column3;
+        font-size: 15px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        background-color: #EBB1A4;
+        color: white;
+    }
+    .hero_image1 {
+        background-image: url(pictures/studio.jpg);
+        height: 200px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero_image2 {
+        background-image: url(pictures/founder.jpg);
+        height: 200px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .hero_image3 {
+        background-image: url(pictures/team.jpg);
+        height: 200px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .hero_image4 {
+        background-image: url(pictures/games.jpg);
+        height: 200px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .games {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-gap: 15px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .games em {
+        font-size: large;
+        font-style: normal;
+        font-weight: bold;
+    }
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin: 15px;
+        padding: 15px;
+        
+        grid-template-areas: 
+            'img1 img2 img3'
+        ;
+    }
+    
+    #img_grid1 {
+        grid-area: img1;
+        justify-self: center;
+        background-color: white;
+        height: 100px;
+        width: 100px;
+    }
+    
+    #img_grid2 {
+        grid-area: img2;
+        justify-self: center;
+        background-color: white;
+        height: 100px;
+        width: 100px;
+    }
+    
+    #img_grid3 {
+        grid-area: img3;
+        justify-self: center;
+        background-color: white;
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+} 
+
 @media screen and (min-width: 400px) {
     #main{
         display: grid;
