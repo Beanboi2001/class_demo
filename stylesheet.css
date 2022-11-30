@@ -8,11 +8,13 @@ html {
 
 #main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 
-        'about about about'
-        'column1 column2 column3'
+        'about'
+        'column1' 
+        'column2'
+        'column3'
     ;
 }
 
@@ -35,9 +37,9 @@ body {
 
 .nav a {
     color: white;
-    padding: 60px 40px;
+    padding: 10px;
     text-decoration: none;
-    font-size: auto;
+    font-size: 15px;
 }
 
 .nav a:hover {
@@ -62,6 +64,8 @@ img {
     text-align: center;
     margin: 15px;
     padding: 15px;
+    background-color: white;
+    color: #EBB1A4;
 }
 
 .content1 {
@@ -70,6 +74,7 @@ img {
     text-align: center;
     margin: 15px;
     padding: 15px;
+    color: white;
 }
 
 .content2 {
@@ -78,6 +83,8 @@ img {
     text-align: center;
     margin: 15px;
     padding: 15px;
+    background-color: white;
+    color: #EBB1A4;
 }
 
 .content3 {
@@ -86,6 +93,7 @@ img {
     text-align: center;
     margin: 15px;
     padding: 15px;
+    color: white;
 }
 
 ul {
@@ -164,7 +172,8 @@ a {
 
 .img {
     width: 150px;
-    height: 50px;
+    height: 150px;
+    padding: 5px;
 }
 
 #i1, #i3, #i5 {
@@ -175,6 +184,11 @@ a {
 #i2, #i4, #i6 {
     color: white;
 }
+
+footer {
+    color: white;
+}
+
 /* responsive design */
 
 img {
